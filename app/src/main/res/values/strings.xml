@@ -1,14 +1,10 @@
 <resources>
     <string name="app_name">My Examples</string>
     <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment</string>
-    <string name="fab_action">fab_action</string>
+    <string name="recycler_view">Recycler View</string>
+    <string name="title">Title</string>
+    <string name="supporting_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="image_example">example</string>
 
 </resources>
