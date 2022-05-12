@@ -28,10 +28,11 @@ class MainFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
         binding.buttonRecyclerView.setOnClickListener {
-            findNavController().navigate(R.id.action_MainFragment_to_RecyclerViewFragment)
+            findNavController().navigate(R.id.action_main_fragment_to_recycler_view_fragment)
+        }
+        binding.buttonDialog.setOnClickListener {
+            findNavController().navigate(R.id.action_main_fragment_to_dialog_examples_fragment)
         }
     }
 

@@ -3,22 +3,50 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/MainFragment">
+    app:startDestination="@id/main_fragment">
 
     <fragment
-        android:id="@+id/MainFragment"
+        android:id="@+id/main_fragment"
         android:name="com.gaugustini.myexamples.ui.MainFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_main">
         <action
-            android:id="@+id/action_MainFragment_to_RecyclerViewFragment"
-            app:destination="@id/RecyclerViewFragment" />
+            android:id="@+id/action_main_fragment_to_recycler_view_fragment"
+            app:destination="@id/recycler_view_fragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_dialog_examples_fragment"
+            app:destination="@id/dialog_examples_fragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/RecyclerViewFragment"
+        android:id="@+id/recycler_view_fragment"
         android:name="com.gaugustini.myexamples.ui.recyclerview.RecyclerViewFragment"
         android:label="Recycler View"
         tools:layout="@layout/fragment_recycler_view" />
+
+    <fragment
+        android:id="@+id/dialog_examples_fragment"
+        android:name="com.gaugustini.myexamples.ui.dialog.DialogExamplesFragment"
+        android:label="Dialogs"
+        tools:layout="@layout/fragment_dialog_examples">
+        <action
+            android:id="@+id/action_dialog_examples_fragment_to_dialog_example"
+            app:destination="@id/dialog_example" />
+        <action
+            android:id="@+id/action_dialog_examples_fragment_to_dialog_bottom_sheet"
+            app:destination="@id/dialog_bottom_sheet" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/dialog_example"
+        android:name="com.gaugustini.myexamples.ui.dialog.ExampleDialog"
+        android:label="Custom Dialog"
+        tools:layout="@layout/dialog_example" />
+
+    <dialog
+        android:id="@+id/dialog_bottom_sheet"
+        android:name="com.gaugustini.myexamples.ui.dialog.ExampleBottomSheetDialog"
+        android:label="Bottom Sheet Dialog"
+        tools:layout="@layout/dialog_bottom_sheet" />
 
 </navigation>
