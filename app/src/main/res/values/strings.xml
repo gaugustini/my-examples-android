@@ -17,5 +17,7 @@
     <string name="decline">Decline</string>
     <string name="accept">Accept</string>
 
+    <string name="activity">Activity</string>
+    <string name="activity_text">This is a value from another activity: %1$d</string>
 
 </resources>

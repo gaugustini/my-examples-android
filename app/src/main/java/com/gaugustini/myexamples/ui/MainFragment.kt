@@ -1,5 +1,6 @@
 package com.gaugustini.myexamples.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.gaugustini.myexamples.R
 import com.gaugustini.myexamples.databinding.FragmentMainBinding
+import com.gaugustini.myexamples.ui.activity.ExampleActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 /**
@@ -33,6 +35,13 @@ class MainFragment : Fragment() {
         }
         binding.buttonDialog.setOnClickListener {
             findNavController().navigate(R.id.action_main_fragment_to_dialog_examples_fragment)
+        }
+        binding.buttonActivity.setOnClickListener {
+            Intent(this.context, ExampleActivity::class.java).also {
+                val randomNumber = (0..10).random()
+                it.putExtra("EXTRA_RANDOM", randomNumber)
+                startActivity(it)
+            }
         }
     }
 
