@@ -59,7 +59,7 @@ dependencies {
 
     // UI
     implementation("com.google.android.material:material:1.6.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.3")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
     // Fragment
     implementation("androidx.fragment:fragment-ktx:1.4.1")

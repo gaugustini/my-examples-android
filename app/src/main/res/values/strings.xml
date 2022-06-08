@@ -20,4 +20,9 @@
     <string name="activity">Activity</string>
     <string name="activity_text">This is a value from another activity: %1$d</string>
 
+    <string name="implicit_intent">Implicit Intent</string>
+    <string name="chosen_image">Chosen image</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="take_picture">Take Picture</string>
+
 </resources>

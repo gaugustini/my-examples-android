@@ -43,6 +43,9 @@ class MainFragment : Fragment() {
                 startActivity(it)
             }
         }
+        binding.buttonImplicitIntent.setOnClickListener {
+            findNavController().navigate(R.id.action_main_fragment_to_implicit_intent_fragment)
+        }
     }
 
 }

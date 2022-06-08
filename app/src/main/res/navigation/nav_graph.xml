@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_main_fragment_to_dialog_examples_fragment"
             app:destination="@id/dialog_examples_fragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_implicit_intent_fragment"
+            app:destination="@id/implicit_intent_fragment" />
     </fragment>
 
     <fragment
@@ -48,5 +51,11 @@
         android:name="com.gaugustini.myexamples.ui.dialog.ExampleBottomSheetDialog"
         android:label="Bottom Sheet Dialog"
         tools:layout="@layout/dialog_bottom_sheet" />
+
+    <fragment
+        android:id="@+id/implicit_intent_fragment"
+        android:name="com.gaugustini.myexamples.ui.implicitintent.ImplicitIntentFragment"
+        android:label="Implicit Intent"
+        tools:layout="@layout/fragment_implicit_intent" />
 
 </navigation>
