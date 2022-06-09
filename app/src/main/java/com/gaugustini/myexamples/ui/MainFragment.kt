@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.gaugustini.myexamples.R
 import com.gaugustini.myexamples.databinding.FragmentMainBinding
 import com.gaugustini.myexamples.ui.activity.ExampleActivity
+import com.gaugustini.myexamples.ui.bottomnavigation.BottomNavigationActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 /**
@@ -45,6 +46,11 @@ class MainFragment : Fragment() {
         }
         binding.buttonImplicitIntent.setOnClickListener {
             findNavController().navigate(R.id.action_main_fragment_to_implicit_intent_fragment)
+        }
+        binding.buttonBottomNavigation.setOnClickListener {
+            Intent(this.context, BottomNavigationActivity::class.java).also {
+                startActivity(it)
+            }
         }
     }
 

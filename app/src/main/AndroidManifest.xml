@@ -34,6 +34,10 @@
             android:name=".ui.activity.ExampleActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".ui.bottomnavigation.BottomNavigationActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
