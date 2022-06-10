@@ -38,6 +38,11 @@
             android:name=".ui.bottomnavigation.BottomNavigationActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".ui.navigationdrawer.NavigationDrawerActivity"
+            android:exported="false"
+            android:label="@string/navigation_drawer" />
+
     </application>
 
 </manifest>

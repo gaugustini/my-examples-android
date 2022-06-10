@@ -11,6 +11,7 @@ import com.gaugustini.myexamples.R
 import com.gaugustini.myexamples.databinding.FragmentMainBinding
 import com.gaugustini.myexamples.ui.activity.ExampleActivity
 import com.gaugustini.myexamples.ui.bottomnavigation.BottomNavigationActivity
+import com.gaugustini.myexamples.ui.navigationdrawer.NavigationDrawerActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 /**
@@ -49,6 +50,11 @@ class MainFragment : Fragment() {
         }
         binding.buttonBottomNavigation.setOnClickListener {
             Intent(this.context, BottomNavigationActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+        binding.buttonNavigationDrawer.setOnClickListener {
+            Intent(this.context, NavigationDrawerActivity::class.java).also {
                 startActivity(it)
             }
         }

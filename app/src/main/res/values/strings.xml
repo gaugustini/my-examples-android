@@ -33,4 +33,15 @@
     <string name="dashboard_fragment">Dashboard Fragment</string>
     <string name="notification_fragment">Notification Fragment</string>
 
+    <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="title_camera">Camera</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="title_slideshow">Slideshow</string>
+    <string name="camera_fragment">Camera Fragment</string>
+    <string name="gallery_fragment">Gallery Fragment</string>
+    <string name="slideshow_fragment">Slideshow Fragment</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
 </resources>
