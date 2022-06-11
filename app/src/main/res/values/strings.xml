@@ -44,4 +44,6 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
 
+    <string name="view_pager">View Pager</string>
+
 </resources>

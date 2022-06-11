@@ -58,6 +58,9 @@ class MainFragment : Fragment() {
                 startActivity(it)
             }
         }
+        binding.buttonViewPager.setOnClickListener {
+            findNavController().navigate(R.id.action_main_fragment_to_view_pager_fragment)
+        }
     }
 
 }

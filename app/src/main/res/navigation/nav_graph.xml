@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_main_fragment_to_implicit_intent_fragment"
             app:destination="@id/implicit_intent_fragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_view_pager_fragment"
+            app:destination="@id/view_pager_fragment" />
     </fragment>
 
     <fragment
@@ -57,5 +60,11 @@
         android:name="com.gaugustini.myexamples.ui.implicitintent.ImplicitIntentFragment"
         android:label="Implicit Intent"
         tools:layout="@layout/fragment_implicit_intent" />
+
+    <fragment
+        android:id="@+id/view_pager_fragment"
+        android:name="com.gaugustini.myexamples.ui.viewpager.ViewPagerFragment"
+        android:label="View Pager"
+        tools:layout="@layout/fragment_view_pager" />
 
 </navigation>
