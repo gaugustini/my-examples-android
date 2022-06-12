@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.gaugustini.myexamples.databinding.FragmentViewPagerBinding
 import com.gaugustini.myexamples.model.Example
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
 class ViewPagerFragment : Fragment() {
 
@@ -18,6 +20,19 @@ class ViewPagerFragment : Fragment() {
         binding = FragmentViewPagerBinding.inflate(inflater, container, false)
 
         setAdapter()
+
+        TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
+            tab.text = "Tab ${(position + 1)}"
+        }.attach()
+
+        binding.tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            // Handle clicks on tabs
+            override fun onTabSelected(tab: TabLayout.Tab?) {}
+
+            override fun onTabUnselected(tab: TabLayout.Tab?) {}
+
+            override fun onTabReselected(tab: TabLayout.Tab?) {}
+        })
 
         return binding.root
     }
