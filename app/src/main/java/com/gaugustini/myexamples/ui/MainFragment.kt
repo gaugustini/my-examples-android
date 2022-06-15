@@ -61,6 +61,9 @@ class MainFragment : Fragment() {
         binding.buttonViewPager.setOnClickListener {
             findNavController().navigate(R.id.action_main_fragment_to_view_pager_fragment)
         }
+        binding.buttonDataStore.setOnClickListener {
+            findNavController().navigate(R.id.action_main_fragment_to_data_store_fragment)
+        }
     }
 
 }
