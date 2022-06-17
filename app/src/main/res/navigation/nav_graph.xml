@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_main_fragment_to_data_store_fragment"
             app:destination="@id/data_store_fragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_notification_fragment"
+            app:destination="@id/notification_fragment" />
     </fragment>
 
     <fragment
@@ -75,5 +78,11 @@
         android:name="com.gaugustini.myexamples.ui.datastore.DataStoreFragment"
         android:label="DataStore"
         tools:layout="@layout/fragment_data_store" />
+
+    <fragment
+        android:id="@+id/notification_fragment"
+        android:name="com.gaugustini.myexamples.ui.notification.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification" />
 
 </navigation>

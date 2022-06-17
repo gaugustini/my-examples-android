@@ -64,6 +64,9 @@ class MainFragment : Fragment() {
         binding.buttonDataStore.setOnClickListener {
             findNavController().navigate(R.id.action_main_fragment_to_data_store_fragment)
         }
+        binding.buttonNotification.setOnClickListener {
+            findNavController().navigate(R.id.action_main_fragment_to_notification_fragment)
+        }
     }
 
 }

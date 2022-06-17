@@ -52,4 +52,7 @@
     <string name="save">Save</string>
     <string name="read">Read</string>
 
+    <string name="notification">Notification</string>
+    <string name="show_notification">Show Notification</string>
+
 </resources>
