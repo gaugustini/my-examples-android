@@ -55,4 +55,10 @@
     <string name="notification">Notification</string>
     <string name="show_notification">Show Notification</string>
 
+    <string name="service">Service</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="send_data">Send Data</string>
+    <string name="data_string">Data String</string>
+
 </resources>

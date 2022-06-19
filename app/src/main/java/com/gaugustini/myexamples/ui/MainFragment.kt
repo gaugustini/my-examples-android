@@ -67,6 +67,9 @@ class MainFragment : Fragment() {
         binding.buttonNotification.setOnClickListener {
             findNavController().navigate(R.id.action_main_fragment_to_notification_fragment)
         }
+        binding.buttonService.setOnClickListener {
+            findNavController().navigate(R.id.action_main_fragment_to_service_fragment)
+        }
     }
 
 }

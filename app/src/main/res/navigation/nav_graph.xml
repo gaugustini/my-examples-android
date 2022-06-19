@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_main_fragment_to_notification_fragment"
             app:destination="@id/notification_fragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_service_fragment"
+            app:destination="@id/service_fragment" />
     </fragment>
 
     <fragment
@@ -84,5 +87,11 @@
         android:name="com.gaugustini.myexamples.ui.notification.NotificationFragment"
         android:label="Notification"
         tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/service_fragment"
+        android:name="com.gaugustini.myexamples.ui.service.ServiceFragment"
+        android:label="Service"
+        tools:layout="@layout/fragment_service" />
 
 </navigation>

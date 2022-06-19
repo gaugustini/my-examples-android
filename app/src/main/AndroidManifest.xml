@@ -43,6 +43,8 @@
             android:exported="false"
             android:label="@string/navigation_drawer" />
 
+        <service android:name=".ui.service.MyService" />
+
     </application>
 
 </manifest>
