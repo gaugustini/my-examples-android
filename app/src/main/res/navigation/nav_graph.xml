@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_main_fragment_to_service_fragment"
             app:destination="@id/service_fragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_broadcast_receiver_fragment"
+            app:destination="@id/broadcast_receiver_fragment" />
     </fragment>
 
     <fragment
@@ -93,5 +96,11 @@
         android:name="com.gaugustini.myexamples.ui.service.ServiceFragment"
         android:label="Service"
         tools:layout="@layout/fragment_service" />
+
+    <fragment
+        android:id="@+id/broadcast_receiver_fragment"
+        android:name="com.gaugustini.myexamples.ui.broadcastreceiver.BroadcastReceiverFragment"
+        android:label="Broadcast Receiver"
+        tools:layout="@layout/fragment_broadcast_receiver" />
 
 </navigation>

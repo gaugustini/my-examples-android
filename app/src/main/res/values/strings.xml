@@ -61,4 +61,6 @@
     <string name="send_data">Send Data</string>
     <string name="data_string">Data String</string>
 
+    <string name="broadcast_receiver">Broadcast Receiver</string>
+
 </resources>
