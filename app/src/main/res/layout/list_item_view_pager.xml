@@ -7,7 +7,7 @@
 
         <variable
             name="example"
-            type="com.gaugustini.myexamples.model.Example" />
+            type="com.gaugustini.myexamples.util.Example" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

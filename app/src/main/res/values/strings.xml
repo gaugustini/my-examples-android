@@ -62,5 +62,6 @@
     <string name="data_string">Data String</string>
 
     <string name="broadcast_receiver">Broadcast Receiver</string>
+    <string name="airplane_mode">Enable/Disable Airplane Mode</string>
 
 </resources>

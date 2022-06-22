@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/camera_fragment"
-        android:name="com.gaugustini.myexamples.ui.navigationdrawer.CameraFragment"
+        android:name="com.gaugustini.myexamples.navigationdrawer.CameraFragment"
         android:label="@string/title_camera"
         tools:layout="@layout/fragment_camera" />
 
     <fragment
         android:id="@+id/gallery_fragment"
-        android:name="com.gaugustini.myexamples.ui.navigationdrawer.GalleryFragment"
+        android:name="com.gaugustini.myexamples.navigationdrawer.GalleryFragment"
         android:label="@string/title_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/slideshow_fragment"
-        android:name="com.gaugustini.myexamples.ui.navigationdrawer.SlideshowFragment"
+        android:name="com.gaugustini.myexamples.navigationdrawer.SlideshowFragment"
         android:label="@string/title_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 
